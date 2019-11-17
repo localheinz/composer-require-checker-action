@@ -1,0 +1,15 @@
+# https://help.github.com/en/articles/metadata-syntax-for-github-actions
+
+name: 'composer-require-checker-action'
+
+branding:
+  icon: 'box'
+  color: 'green'
+
+description: 'Run maglnet/composer-require-checker to ensure your PHP project does not use any unknown symbols'.
+
+author: 'localheinz'
+
+runs:
+  using: 'docker'
+  image: 'docker://localheinz/composer-require-checker-action'

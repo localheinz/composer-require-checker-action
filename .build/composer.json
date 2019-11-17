@@ -1,0 +1,14 @@
+{
+  "name": "foo/bar",
+  "license": "MIT",
+  "type": "library",
+  "description": "Hmm",
+    "require": {
+    "php": "^7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Foo\\": "src"
+    }
+  }
+}
