@@ -38,7 +38,7 @@ repository:
   allow_rebase_merge: false
   allow_squash_merge: false
   default_branch: master
-  description: ":octocat: + :green_book: Provides a GitHub repository template for a GitHub action."
+  description: ":octocat: + :mag: Provides a GitHub action that runs maglnet/composer-require-checker to ensure your PHP project does not use any unknown symbols."
   has_downloads: true
   has_issues: true
   has_pages: false

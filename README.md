@@ -3,9 +3,7 @@
 [![Continuous Integration](https://github.com/localheinz/composer-require-checker-action/workflows/Continuous%20Integration/badge.svg)](https://github.com/localheinz/composer-require-checker-action/actions)
 [![Continuous Deployment](https://github.com/localheinz/composer-require-checker-action/workflows/Continuous%20Deployment/badge.svg)](https://github.com/localheinz/composer-require-checker-action/actions)
 
-## What does this action do?
-
-This action runs [`maglnet/composer-require-checker`]() to ensure your PHP project does not use any unknown symbols'.
+Provides a [GitHub action](https://github.com/features/actions) that runs [`maglnet/composer-require-checker`](https://github.com/maglnet/ComposerRequireChecker) to ensure your PHP project does not use any unknown symbols.
 
 ## Usage
 
