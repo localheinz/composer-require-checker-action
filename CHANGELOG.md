@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`1.1.0...master`](https://github.com/localheinz/composer-require-checker-action/compare/1.1.0...master).
+For a full diff see [`1.1.1...master`](https://github.com/localheinz/composer-require-checker-action/compare/1.1.1...master).
+
+### [`1.1.1`][1.1.1]
+
+For a full diff see [`1.1.0...1.1.1`][1.1.0...1.1.1].
+
+#### Changed
+
+* Set `memory_limit` to `-1` ([#3]), by [@localheinz]
 
 ### [`1.1.0`][1.1.0]
 
@@ -22,10 +30,13 @@ For a full diff see [`34c52fe...1.0.0`][34c52fe...1.0.0].
 
 [1.0.0]: https://github.com/localheinz/localheinz/composer-require-checker-action/releases/tag/1.0.0
 [1.1.0]: https://github.com/localheinz/localheinz/composer-require-checker-action/releases/tag/1.1.0
+[1.1.1]: https://github.com/localheinz/localheinz/composer-require-checker-action/releases/tag/1.1.1
 
 [34c52fe...1.0.0]: https://github.com/localheinz/composer-require-checker-action/compare/34c52fe...1.0.0
 [1.0.0...1.1.0]: https://github.com/localheinz/composer-require-checker-action/compare/1.0.0...1.1.0
+[1.1.0...1.1.1]: https://github.com/localheinz/composer-require-checker-action/compare/1.1.0...1.1.1
 
 [#2]: https://github.com/localheinz/composer-require-checker-action/pull/2
+[#3]: https://github.com/localheinz/composer-require-checker-action/pull/3
 
 [@localheinz]: https://github.com/localheinz
