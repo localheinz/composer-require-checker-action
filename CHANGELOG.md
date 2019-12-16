@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 For a full diff see [`1.1.1...master`](https://github.com/localheinz/composer-require-checker-action/compare/1.1.1...master).
 
+### Added
+
+* Added `version` input parameter which allows specifying a version constraint for installing `maglnet/composer-require-checker` when necessary ([#5]), by [@localheinz]
+
 ### [`1.1.1`][1.1.1]
 
 For a full diff see [`1.1.0...1.1.1`][1.1.0...1.1.1].
@@ -38,5 +42,6 @@ For a full diff see [`34c52fe...1.0.0`][34c52fe...1.0.0].
 
 [#2]: https://github.com/localheinz/composer-require-checker-action/pull/2
 [#3]: https://github.com/localheinz/composer-require-checker-action/pull/3
+[#5]: https://github.com/localheinz/composer-require-checker-action/pull/5
 
 [@localheinz]: https://github.com/localheinz

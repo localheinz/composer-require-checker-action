@@ -13,3 +13,9 @@ author: 'localheinz'
 runs:
   using: 'docker'
   image: 'docker://localheinz/composer-require-checker-action'
+
+inputs:
+  version:
+    description: 'Version constraint for maglnet/composer-require-checker'
+    required: false
+    default: '^2.0.0'
