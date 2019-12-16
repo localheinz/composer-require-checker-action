@@ -8,4 +8,8 @@ if [ "$HOME" != '/root' ]; then
   cp -r /root/.composer "$HOME"/.composer;
 fi
 
+if [ "${INPUT_WORKINGDIRECTORY}" != "." ]; then
+  cd "${INPUT_WORKINGDIRECTORY}" || exit 1
+fi
+
 sh -c "$HOME/.composer/vendor/bin/composer-require-checker check $*"

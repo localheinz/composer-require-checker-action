@@ -11,6 +11,7 @@ For a full diff see [`1.1.1...master`](https://github.com/localheinz/composer-re
 ### Added
 
 * Added `version` input parameter which allows specifying a version constraint for installing `maglnet/composer-require-checker` when necessary ([#5]), by [@localheinz]
+* Added `workingDirectory` input parameter which allows specifying a directory in which to run `maglnet/composer-require-checker` ([#10]), by [@localheinz]
 
 ### [`1.1.1`][1.1.1]
 
@@ -43,5 +44,6 @@ For a full diff see [`34c52fe...1.0.0`][34c52fe...1.0.0].
 [#2]: https://github.com/localheinz/composer-require-checker-action/pull/2
 [#3]: https://github.com/localheinz/composer-require-checker-action/pull/3
 [#5]: https://github.com/localheinz/composer-require-checker-action/pull/5
+[#10]: https://github.com/localheinz/composer-require-checker-action/pull/10
 
 [@localheinz]: https://github.com/localheinz
