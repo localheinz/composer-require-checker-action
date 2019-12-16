@@ -15,10 +15,6 @@ inputs:
     description: 'Version constraint for maglnet/composer-require-checker'
     required: false
     default: '^2.0.0'
-  workingDirectory:
-    description: 'Directory in which to run maglnet/composer-require-checker'
-    required: false
-    default: '.'
 
 runs:
   using: 'docker'

@@ -108,38 +108,6 @@ If you prefer to use a different version of `maglnet/composer-require-checker`, 
 +        with:
 +          version: "^1.1.0"
 ```
-
-### `workingDirectory`
-
-If `composer.json` is not in the root of your project, you specify the working directory using the `workingDirectory` input:
-
-```diff
- on:
-   pull_request:
-   push:
-     branches:
-       - master
-     tags:
-       - "**"
-
- name: "Continuous Integration"
-
- jobs:
-   composer-require-checker-action:
-     name: composer-require-checker-action
-
-     runs-on: ubuntu-latest
-
-     steps:
-       - name: "Checkout"
-         uses: actions/checkout@master
-
-       - name: "Run action"
-         uses: docker://localheinz/composer-require-checker-action:latest
-+        with:
-+          workingDirectory: "foo/bar"
-```
-
 ## Changelog
 
 Please have a look at [`CHANGELOG.md`](CHANGELOG.md).
