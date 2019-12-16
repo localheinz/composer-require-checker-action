@@ -20,7 +20,10 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1.0.0
+        uses: actions/checkout@v2.0.0
+
+      - name: "Fetch tags"
+        run: git fetch --tags
 
       - name: "Build Docker image"
         run: $(which docker) build --tag ${DOCKER_IMAGE}:latest .
