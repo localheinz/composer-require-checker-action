@@ -26,6 +26,14 @@ jobs:
       - name: "Build Docker image"
         run: $(which docker) build --tag ${DOCKER_IMAGE}:latest .
 
+      - name: "Cache dependencies installed with composer"
+        uses: actions/cache@v1.0.3
+        with:
+          path: ~/.composer/cache
+          key: php7.3-composer-${{ matrix.dependencies }}-${{ hashFiles('**/.build/composer.lock') }}
+          restore-keys: |
+            php7.3-composer-${{ matrix.dependencies }}-
+
       - name: "Install dependencies with composer"
         run: php7.3 $(which composer) install --working-dir=.build
 
