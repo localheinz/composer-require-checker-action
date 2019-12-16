@@ -25,9 +25,9 @@ name: "Continuous Integration"
 jobs:
   dependency-analysis:
     name: "Dependency Analysis"
-    
+
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: "Checkout"
         uses: actions/checkout@master
@@ -64,9 +64,9 @@ Instead of using the latest pre-built Docker image, you can also specify a Docke
  jobs:
    composer-require-checker-action:
      name: composer-require-checker-action
-    
+
      runs-on: ubuntu-latest
-    
+
      steps:
        - name: "Checkout"
          uses: actions/checkout@master
@@ -76,6 +76,38 @@ Instead of using the latest pre-built Docker image, you can also specify a Docke
 +        uses: docker://localheinz/composer-require-checker-action:1.2.3
 ```
 
+## Inputs
+
+### `version`
+
+If you prefer to use a different version of `maglnet/composer-require-checker`, you can specify it using the `version` input:
+
+```diff
+ on:
+   pull_request:
+   push:
+     branches:
+       - master
+     tags:
+       - "**"
+
+ name: "Continuous Integration"
+
+ jobs:
+   composer-require-checker-action:
+     name: composer-require-checker-action
+
+     runs-on: ubuntu-latest
+
+     steps:
+       - name: "Checkout"
+         uses: actions/checkout@master
+
+       - name: "Run action"
+         uses: docker://localheinz/composer-require-checker-action:latest
++        with:
++          version: "^1.1.0"
+```
 ## Changelog
 
 Please have a look at [`CHANGELOG.md`](CHANGELOG.md).
